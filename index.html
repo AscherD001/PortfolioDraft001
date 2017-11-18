@@ -22,6 +22,7 @@
       padding: 0px;
       margin: 0px;
       background-color: black;
+      color: lightgrey;
     }
     html {
       height: 100%;
@@ -37,7 +38,6 @@
       display: none;
       position: fixed;
       font-family: 'Special Elite', cursive;
-      color: lightgrey;
       font-size: 10vh;
       line-height: 13vh;
       text-align: left;
@@ -51,7 +51,6 @@
     #title {
       position: relative;
       font-family: 'Special Elite', cursive;
-      color: lightgrey;
       font-size: 10vw;
       text-align: center;
       top: 400px;
@@ -76,25 +75,22 @@
     #test3 {
       background-image: url("test3.jpg");
     }
-    #about {
+    .heading {
       font-family: 'Caveat', cursive;
-      color: lightgrey;
       font-size: 10vh;
       text-align: center;
       margin-top: 1vh;
+    }
+    /* #about {
+      
     }
     #portfolio {
-      font-family: 'Caveat', cursive;
-      color: lightgrey;
-      font-size: 10vh;
-      text-align: center;
-      margin-top: 1vh;
-    }
+      
+    } */
     .wide80 {
       width: 80vw;
       margin-left: 10vw;
       font-family: 'Roboto Mono', monospace;
-      color: lightgrey;
       font-size: 5vh;
       text-align: center;
     }
@@ -115,7 +111,6 @@
     }
     #footer {
       font-family: 'Homemade Apple', cursive;
-      color: lightgrey;
       font-size: 5vh;
       text-align: center;
       position: absolute;
@@ -188,9 +183,9 @@
 <div id="test"></div>
 
 <div class="bodyWrap1 wide80">
-    <div id="about">About Me</div><hr>
+    <div id="about" class="heading">About Me</div><hr>
   <div class="body1">
-      I'm a technophile and full stack web developer specializing in UI/UX as well as designing and developing video games.  I'm also passionate about art and graphic design and have my sights set on a full-time position in web development. Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, React, and Google Libraries. Additionally, I'm knowledgeable in Adobe Creative Suites, Microsoft Office, and all Windows Operating Systems.
+      I'm a technophile and full stack web developer specializing in UI/UX as well as designing and developing video games.  I'm also passionate about art and graphic design and have my sights set on a full-time position in web development. I have experience with HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, React, and Google Libraries. Additionally, I'm knowledgeable in Adobe Creative Suites, Microsoft Office, and all Windows Operating Systems.
       
   </div>
 
@@ -199,7 +194,7 @@
 <div id="test2"></div>
 
 <div class="bodyWrap2 wide80">
-  <div id="portfolio">Portfolio</div><hr>
+  <div id="portfolio" class="heading">My Work</div><hr>
   <div class="body2">
     My portfolio and works will go here:<br>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, mollitia in nesciunt ipsam repellat illo facilis, sapiente nostrum eum culpa delectus animi. Ipsa cumque velit ducimus laboriosam debitis quo ea?
