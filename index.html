@@ -21,7 +21,6 @@
     * {
       padding: 0px;
       margin: 0px;
-      background-color: black;
       color: lightgrey;
     }
     html {
@@ -31,17 +30,21 @@
       width: 100vw;
       overflow-x: hidden;
       overflow-y: scroll;
+      position: relative;
+      background-color: black;
     }
     #nav {
-      width: 100vw;
-      height: 10.2vh;
-      display: none;
-      position: fixed;
       font-family: 'Special Elite', cursive;
       font-size: 10vh;
       line-height: 13vh;
       text-align: left;
       z-index: 100;
+      position: fixed;
+      top: -100px;
+      left: 0px;
+      width: 100vw;
+      height: 10vh;
+      background-color: black;
     }
     #titleWrap {
       width: 80vw;
@@ -81,62 +84,62 @@
       text-align: center;
       margin-top: 1vh;
     }
-    /* #about {
-      
-    }
-    #portfolio {
-      
-    } */
     .wide80 {
       width: 80vw;
       margin-left: 10vw;
       font-family: 'Roboto Mono', monospace;
-      font-size: 5vh;
+      font-size: 4.8vh;
       text-align: center;
     }
-    .bodyWrap1 {
-      height: 91vh;
+    .bodyWrap {
+      height: auto;
     }
-    .body1 {
+    .body {
       margin-top: 4vh;
+      padding-bottom: 6vh;
     }
-    .body2 {
-      margin-top: 4vh;
+    .portfolioElement {
+      width: 23vw;
+      margin: 0 1vw 0 1vw;
+      display: inline-block;
+      vertical-align: top;
     }
-    .bodyWrap2 {
-      height: 60vh;
+    .portfolioAnchor {
+      text-decoration: none;
     }
-    .bodyWrap3 {
-      height: 30vh;
+    .portfolioElement img {
+      width: 100%;
+      height: auto;
+    }
+    #bodyWrap3 {
+      height: 300px;
+      position: relative;
+      margin-top: 15vh;
+    }
+    #social {
+      position: absolute;
+      bottom: 33vh;
+    }
+    #footWrap {
+      width: 100vw;
+      position: relative;
     }
     #footer {
       font-family: 'Homemade Apple', cursive;
-      font-size: 5vh;
+      font-size: 5vw;
       text-align: center;
+      height: 125px;
+      overflow: hidden;
       position: absolute;
-      bottom: -300px;
+      bottom: -325px;
       left: 0;
-      right: 0;
-    }
-    #copy {
-      font-size: 15vh;
-      display: inline-block;
-    }
-    #footNote {
-      display: inline-block;
-      vertical-align: 5vh;
-    }
-    #social {
-      height: 20vh;
-      width: 100%;
-      position: relative;
     }
     #git {
       width: 10vh;
       height: 10vh;
       position: absolute;
       top: 8vh;
-      left: 30vw;
+      left: 25vw;
     }
     .git {
       fill: lightgrey;
@@ -146,7 +149,7 @@
       height: 10vh;
       position: absolute;
       top: 8vh;
-      right: 30vw;
+      left: 35vw;
     }
     .linkedin {
       fill: lightgrey;
@@ -182,10 +185,10 @@
 <!-- Temp Image Test -->
 <div id="test"></div>
 
-<div class="bodyWrap1 wide80">
+<div class="bodyWrap wide80">
     <div id="about" class="heading">About Me</div><hr>
-  <div class="body1">
-      I'm a technophile and full stack web developer specializing in UI/UX as well as designing and developing video games.  I'm also passionate about art and graphic design and have my sights set on a full-time position in web development. I have experience with HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, React, and Google Libraries. Additionally, I'm knowledgeable in Adobe Creative Suites, Microsoft Office, and all Windows Operating Systems.
+  <div class="body">
+      A full-stack web developer specializing in UI/UX, design and development of video games, passionate about art and graphic design, and loves all things technological.<br><br>Experience in ECMAScript6, HTML5, CSS3, JQuery, Bootstrap, NodeJS, Express, MySQL, MongoDB, ReactJS, Handlebars, Firebase, and Google Libraries.<br><br>Additionally knowledgeable in Adobe Creative Cloud, MS Office 2016, and Windows 10.
       
   </div>
 
@@ -193,18 +196,26 @@
 <!-- Temp Image Test -->
 <div id="test2"></div>
 
-<div class="bodyWrap2 wide80">
+<div class="bodyWrap wide80">
   <div id="portfolio" class="heading">My Work</div><hr>
-  <div class="body2">
-    My portfolio and works will go here:<br>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, mollitia in nesciunt ipsam repellat illo facilis, sapiente nostrum eum culpa delectus animi. Ipsa cumque velit ducimus laboriosam debitis quo ea?
+  <div class="body">
+    <div class="portfolioElement">
+      <a class="portfolioAnchor" href="https://ascherd001.github.io/Hangman001/" target="_blank"><img src="hangman.png" alt="A placeholder Image"><br>Showdown at High Noon Hangman</a>
+    </div>
+    <div class="portfolioElement">
+      <a class="portfolioAnchor" href="https://ascherd001.github.io/Homework004-RPG-Game/" target="_blank"><img src="rpg.png" alt="A placeholder Image"><br>Animated RPG Puzzle Game</a>
+    </div>
+    <div class="portfolioElement">
+      <a class="portfolioAnchor" href="https://ascherd001.github.io/Group-Project-001/" target="_blank"><img src="travelBear.png" alt="A placeholder Image"><br>Travel Bear with Google Maps API</a>
+    </div>
+    
   </div>
 
 </div>
 <!-- Temp Image Test -->
 <div id="test3"></div>
 
-<div class="bodyWrap3 wide80">
+<div id="bodyWrap3" class="wide80">
 
   <div id="social">
     <div id="git">
@@ -218,11 +229,13 @@
       </a>
     </div>
 
- 
+  
 
     <!-- Footer -->
-    <div id="footer">    
-      <div id="copy">&copy;</div><div id="footNote">&nbsp;Daniel Ascher 2017</div>
+    <div id="footWrap">
+      <div id="footer">    
+        <div id="footNote">&copy;&nbsp;Daniel Ascher 2017</div>
+      </div>
     </div>
   </div>
 
@@ -236,58 +249,88 @@
 <script>
   var title = document.getElementById("title");
   var nav = document.getElementById("nav");
-  var lorem = document.getElementsByClassName("lorem");
-  
-  var titleStart = window.innerHeight * 0.4;
+  var bodyWrap3 = document.getElementById("bodyWrap3");
+  var wide80 = document.getElementsByClassName("wide80");
+  var heading = document.getElementsByClassName("heading");
+  var portfolio = document.getElementsByClassName("portfolioElement");
+  var links = document.getElementsByClassName("portfolioAnchor");
 
-  console.log(document.documentElement.scrollHeight);
-  console.log(window.outerHeight);
-
+  var git = document.getElementById("git");
+  var linkedin = document.getElementById("linkedin");
+  var footer = document.getElementById("footer");
+ 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-
-  if(window.innerWidth > window.innerHeight && window.innerHeight <= 600) {
-    title.style.fontSize = "20vh";
-    titleStart = window.innerHeight * 0.35;
-  }
-  if(window.innerWidth < 480) {
-    nav.style.fontSize = "10vw";
-    for(var i = 0; i < lorem.length; i ++) {
-      lorem[i].style.fontSize = "5vw";
-    };
-  }
-
+  var titleStart = window.innerHeight * 0.4;
   var titleHeight = titleStart;
   title.style.top = titleHeight + "px";
-  // console.log(titleStart);
-  // console.log(window.innerHeight);
-  window.onscroll = function() {
-    titleHeight = titleStart + (window.pageYOffset * 0.45);
 
-    if(titleHeight > titleStart * 2 - 100) {
-      title.innerHTML = "DANIEL ASCHER";
-      titleHeight = titleStart + (window.pageYOffset * 0.55);
-      title.style.top = titleHeight + "px";
-    } else {
-      title.innerHTML = "DANIEL<br>ASCHER";
-      title.style.top = titleHeight + "px";
+  var resize = function() {
+    footer.style.left = ( bodyWrap3.clientWidth / 2 - footer.clientWidth / 2 ) + "px";
+    git.style.left = ( (bodyWrap3.clientWidth / 2 - git.clientWidth / 2 ) - 60) + "px";
+    linkedin.style.left = ( (bodyWrap3.clientWidth / 2 - linkedin.clientWidth / 2 ) + 60) + "px";
+
+    if(window.innerWidth >= 640 && window.innerWidth < 1200) {
+      footer.style.fontSize = "5vw";
+      nav.style.fontSize = "5vw";
+      nav.style.height = "5vw";
+      nav.style.lineHeight = "7vw";
+    } else if(window.innerWidth < 640) {
+      footer.style.fontSize = "34px";
+      nav.style.fontSize = "34px";
+      nav.style.height = "34px";
+      nav.style.lineHeight = "34px";
+    } else if(window.innerWidth >= 1200) {
+      footer.style.fontSize = "50px";
     }
 
-    titleHeight = titleStart + (window.pageYOffset * 0.45);
-    
-    if(titleHeight >= titleStart * 2) {
-      nav.style.display = "initial";
+    for(var i = 0; i < wide80.length; i ++) {
+      if(window.innerWidth <= 980) {
+        wide80[i].style.fontSize = "4.8vw";
+      } else {
+        wide80[i].style.fontSize = "48px";
+      }
+    }
+    for(var i = 0; i < heading.length; i ++) {
+      if(window.innerWidth <= 980) {
+        heading[i].style.fontSize = "10vw";
+      } else {
+        heading[i].style.fontSize = "100px";
+      }
+    }
+    for(var i = 0; i < links.length; i ++) {
+      if(window.innerWidth <= 980) {
+        links[i].style.fontSize = "4vw";
+      } else {
+        links[i].style.fontSize = "40px";
+      }
+    }
+    for(var i = 0; i < portfolio.length; i ++) {
+      portfolio[i].style.width = "22vw";
+      portfolio[i].style.margin = "0 1vw 0 1vw";
+    }
+  }
+
+  window.onscroll = function() {
+    var init = false;
+
+    titleHeight = titleStart + (window.scrollY * 0.45);
+    title.style.top = titleHeight + "px";
+
+    if(window.scrollY >= window.innerHeight * 0.9) {
+      nav.style.top = "0px";
       title.style.display = "none";
     } else {
-      nav.style.display = "none";
+      nav.style.top = "-100px";
       title.style.display = "";
     }
-
-    // console.log(titleHeight);
-    // console.log("title.style.top " + title.style.top);
-    // console.log("window.pageYOffset " + window.pageYOffset);
+    if(!init) {
+      resize();
+      init = true;
+    }
   }
+  
 
   document.getElementById("git").onmouseover = function() {
     document.getElementsByClassName("git")[0].style.fill = "#FFA500";
@@ -301,6 +344,7 @@
   document.getElementById("linkedin").onmouseout = function() {
     document.getElementsByClassName("linkedin")[0].style.fill = "lightgrey";
   }
+  window.onresize = resize;
 
   </script>
 
