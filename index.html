@@ -9,159 +9,7 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Caveat|Homemade+Apple|Roboto+Mono|Shadows+Into+Light|Special+Elite" rel="stylesheet">
   <!-- Temp Styles -->
-  <style>
-    /*
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Shadows Into Light', cursive;
-    font-family: 'Caveat', cursive;
-    font-family: 'Special Elite', cursive;
-    font-family: 'Homemade Apple', cursive;
-    */
-
-    * {
-      padding: 0px;
-      margin: 0px;
-      color: lightgrey;
-    }
-    html {
-      height: 100%;
-    }
-    body {
-      width: 100vw;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      position: relative;
-      background-color: black;
-    }
-    #nav {
-      font-family: 'Special Elite', cursive;
-      font-size: 10vh;
-      line-height: 13vh;
-      text-align: left;
-      z-index: 100;
-      position: fixed;
-      top: -100px;
-      left: 0px;
-      width: 100vw;
-      height: 10vh;
-      background-color: black;
-    }
-    #titleWrap {
-      width: 80vw;
-      margin-left: 10vw;
-      height: 100vh; /* Temp Height */
-    }
-    #title {
-      position: relative;
-      font-family: 'Special Elite', cursive;
-      font-size: 10vw;
-      text-align: center;
-      top: 400px;
-    }
-
-    /*Temp Test Image*/
-    #test, #test2, #test3 {
-      height: 40vh;
-      width: auto;
-      /* background-image: url("test.jpg"); */
-      background-image: url("animated.webp");
-      filter: saturate(0%);
-      position: relative;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-    #test2 {
-      background-image: url("test2.jpg");
-    }
-    #test3 {
-      background-image: url("test3.jpg");
-    }
-    .heading {
-      font-family: 'Caveat', cursive;
-      font-size: 10vh;
-      text-align: center;
-      margin-top: 1vh;
-    }
-    .wide80 {
-      width: 80vw;
-      margin-left: 10vw;
-      font-family: 'Roboto Mono', monospace;
-      font-size: 4.8vh;
-      text-align: center;
-    }
-    .bodyWrap {
-      height: auto;
-    }
-    .body {
-      margin-top: 4vh;
-      padding-bottom: 6vh;
-    }
-    .portfolioElement {
-      width: 23vw;
-      margin: 0 1vw 0 1vw;
-      display: inline-block;
-      vertical-align: top;
-    }
-    .portfolioAnchor {
-      text-decoration: none;
-    }
-    .portfolioElement img {
-      width: 100%;
-      height: auto;
-    }
-    #bodyWrap3 {
-      height: 300px;
-      position: relative;
-      margin-top: 15vh;
-    }
-    #social {
-      position: absolute;
-      bottom: 33vh;
-    }
-    #footWrap {
-      width: 100vw;
-      position: relative;
-    }
-    #footer {
-      font-family: 'Homemade Apple', cursive;
-      font-size: 5vw;
-      text-align: center;
-      height: 125px;
-      overflow: hidden;
-      position: absolute;
-      bottom: -325px;
-      left: 0;
-    }
-    #git {
-      width: 10vh;
-      height: 10vh;
-      position: absolute;
-      top: 8vh;
-      left: 25vw;
-    }
-    .git {
-      fill: lightgrey;
-    }
-    #linkedin {
-      width: 10vh;
-      height: 10vh;
-      position: absolute;
-      top: 8vh;
-      left: 35vw;
-    }
-    .linkedin {
-      fill: lightgrey;
-    }
-    img {
-      width: 10vh;
-      height: 10vh;
-    }
-    ::-webkit-scrollbar { 
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles/styles.css">
 
   
 
@@ -169,7 +17,7 @@
 <body>
  
 <!-- Nav -->
-<div id="nav">&nbsp;Daniel Ascher</div>
+<a href="assets/pdf/resume001.pdf" target="_blank"><div id="nav">&nbsp;Daniel Ascher</div></a>
 
 <!-- Body -->
 <div id="titleWrap">
@@ -200,16 +48,16 @@
   <div id="portfolio" class="heading">My Work</div><hr>
   <div class="body">
       <div class="portfolioElement">
-        <a class="portfolioAnchor" href="https://homework014-project002.herokuapp.com/" target="_blank"><img src="aficionado.png" alt="A placeholder Image"><br>Aficionado, Art of the Rijksmuseum</a>
+        <a class="portfolioAnchor" href="https://homework014-project002.herokuapp.com/" target="_blank"><img src="assets/images/aficionado.png" alt="A placeholder Image"><br>Aficionado, Art of the Rijksmuseum</a>
       </div>
     <!-- <div class="portfolioElement">
-      <a class="portfolioAnchor" href="https://ascherd001.github.io/Hangman001/" target="_blank"><img src="hangman.png" alt="A placeholder Image"><br>Showdown at High Noon Hangman</a>
+      <a class="portfolioAnchor" href="https://ascherd001.github.io/Hangman001/" target="_blank"><img src="assets/images/hangman.png" alt="A placeholder Image"><br>Showdown at High Noon Hangman</a>
     </div> -->
     <div class="portfolioElement">
-      <a class="portfolioAnchor" href="https://ascherd001.github.io/Homework004-RPG-Game/" target="_blank"><img src="rpg.png" alt="A placeholder Image"><br>Animated RPG Puzzle Game</a>
+      <a class="portfolioAnchor" href="https://ascherd001.github.io/Homework004-RPG-Game/" target="_blank"><img src="assets/images/rpg.png" alt="A placeholder Image"><br>Animated RPG Puzzle Game</a>
     </div>
     <div class="portfolioElement">
-      <a class="portfolioAnchor" href="https://ascherd001.github.io/Group-Project-001/" target="_blank"><img src="travelBear.png" alt="A placeholder Image"><br>Travel Bear with Google Maps API</a>
+      <a class="portfolioAnchor" href="https://ascherd001.github.io/Group-Project-001/" target="_blank"><img src="assets/images/travelBear.png" alt="A placeholder Image"><br>Travel Bear with Google Maps API</a>
     </div>
     
   </div>
@@ -244,112 +92,7 @@
 
 </div>
 
-
-
-
-
-<!-- Temp Script -->
-<script>
-  var title = document.getElementById("title");
-  var nav = document.getElementById("nav");
-  var bodyWrap3 = document.getElementById("bodyWrap3");
-  var wide80 = document.getElementsByClassName("wide80");
-  var heading = document.getElementsByClassName("heading");
-  var portfolio = document.getElementsByClassName("portfolioElement");
-  var links = document.getElementsByClassName("portfolioAnchor");
-
-  var git = document.getElementById("git");
-  var linkedin = document.getElementById("linkedin");
-  var footer = document.getElementById("footer");
- 
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-  var titleStart = window.innerHeight * 0.4;
-  var titleHeight = titleStart;
-  title.style.top = titleHeight + "px";
-
-  var resize = function() {
-    footer.style.left = ( bodyWrap3.clientWidth / 2 - footer.clientWidth / 2 ) + "px";
-    git.style.left = ( (bodyWrap3.clientWidth / 2 - git.clientWidth / 2 ) - 60) + "px";
-    linkedin.style.left = ( (bodyWrap3.clientWidth / 2 - linkedin.clientWidth / 2 ) + 60) + "px";
-
-    if(window.innerWidth >= 640 && window.innerWidth < 1200) {
-      footer.style.fontSize = "5vw";
-      nav.style.fontSize = "5vw";
-      nav.style.height = "5vw";
-      nav.style.lineHeight = "7vw";
-    } else if(window.innerWidth < 640) {
-      footer.style.fontSize = "34px";
-      nav.style.fontSize = "34px";
-      nav.style.height = "34px";
-      nav.style.lineHeight = "34px";
-    } else if(window.innerWidth >= 1200) {
-      footer.style.fontSize = "50px";
-    }
-
-    for(var i = 0; i < wide80.length; i ++) {
-      if(window.innerWidth <= 980) {
-        wide80[i].style.fontSize = "4.8vw";
-      } else {
-        wide80[i].style.fontSize = "48px";
-      }
-    }
-    for(var i = 0; i < heading.length; i ++) {
-      if(window.innerWidth <= 980) {
-        heading[i].style.fontSize = "10vw";
-      } else {
-        heading[i].style.fontSize = "100px";
-      }
-    }
-    for(var i = 0; i < links.length; i ++) {
-      if(window.innerWidth <= 980) {
-        links[i].style.fontSize = "4vw";
-      } else {
-        links[i].style.fontSize = "40px";
-      }
-    }
-    for(var i = 0; i < portfolio.length; i ++) {
-      portfolio[i].style.width = "22vw";
-      portfolio[i].style.margin = "0 1vw 0 1vw";
-    }
-  }
-
-  window.onscroll = function() {
-    var init = false;
-
-    titleHeight = titleStart + (window.scrollY * 0.45);
-    title.style.top = titleHeight + "px";
-
-    if(window.scrollY >= window.innerHeight * 0.9) {
-      nav.style.top = "0px";
-      title.style.display = "none";
-    } else {
-      nav.style.top = "-100px";
-      title.style.display = "";
-    }
-    if(!init) {
-      resize();
-      init = true;
-    }
-  }
-  
-
-  document.getElementById("git").onmouseover = function() {
-    document.getElementsByClassName("git")[0].style.fill = "#FFA500";
-  }
-  document.getElementById("git").onmouseout = function() {
-    document.getElementsByClassName("git")[0].style.fill = "lightgrey";
-  }
-  document.getElementById("linkedin").onmouseover = function() {
-    document.getElementsByClassName("linkedin")[0].style.fill = "#0077B5";
-  }
-  document.getElementById("linkedin").onmouseout = function() {
-    document.getElementsByClassName("linkedin")[0].style.fill = "lightgrey";
-  }
-  window.onresize = resize;
-
-  </script>
+<script src="assets/scripts/script.js"></script>
 
 </body>
 </html>

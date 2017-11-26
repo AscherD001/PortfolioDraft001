@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: lightgrey;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  background-color: black;
+}
+#nav {
+  font-family: 'Special Elite', cursive;
+  font-size: 10vh;
+  line-height: 13vh;
+  text-align: left;
+  z-index: 100;
+  position: fixed;
+  top: -100px;
+  left: 0px;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+}
+#titleWrap {
+  width: 80vw;
+  margin-left: 10vw;
+  height: 100vh; /* Temp Height */
+}
+#title {
+  position: relative;
+  font-family: 'Special Elite', cursive;
+  font-size: 10vw;
+  text-align: center;
+  top: 400px;
+}
+
+/*Temp Test Image*/
+#test, #test2, #test3 {
+  height: 40vh;
+  width: auto;
+  /* background-image: url("../images/test.jpg"); */
+  background-image: url("../images/animated.webp");
+  filter: saturate(0%);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#test2 {
+  background-image: url("../images/test2.jpg");
+}
+#test3 {
+  background-image: url("../images/test3.jpg");
+}
+.heading {
+  font-family: 'Caveat', cursive;
+  font-size: 10vh;
+  text-align: center;
+  margin-top: 1vh;
+}
+.wide80 {
+  width: 80vw;
+  margin-left: 10vw;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 4.8vh;
+  text-align: center;
+}
+.bodyWrap {
+  height: auto;
+}
+.body {
+  margin-top: 4vh;
+  padding-bottom: 6vh;
+}
+.portfolioElement {
+  width: 23vw;
+  margin: 0 1vw 0 1vw;
+  display: inline-block;
+  vertical-align: top;
+}
+.portfolioAnchor {
+  text-decoration: none;
+}
+.portfolioElement img {
+  width: 100%;
+  height: auto;
+}
+#bodyWrap3 {
+  height: 300px;
+  position: relative;
+  margin-top: 15vh;
+}
+#social {
+  position: absolute;
+  bottom: 33vh;
+}
+#footWrap {
+  width: 100vw;
+  position: relative;
+}
+#footer {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 5vw;
+  text-align: center;
+  height: 125px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -325px;
+  left: 0;
+}
+#git {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  top: 8vh;
+  left: 25vw;
+}
+.git {
+  fill: lightgrey;
+}
+#linkedin {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  top: 8vh;
+  left: 35vw;
+}
+.linkedin {
+  fill: lightgrey;
+}
+img {
+  width: 10vh;
+  height: 10vh;
+}
+::-webkit-scrollbar { 
+  display: none;
+}
